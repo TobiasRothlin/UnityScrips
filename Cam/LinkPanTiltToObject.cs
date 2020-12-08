@@ -27,11 +27,7 @@ public class LinkPanTiltToObject : MonoBehaviour
         CameraToTarget = target.position - transform.position;
 
         Vector3 XangleVector = new Vector3(0, CameraToTarget.y, CameraToTarget.z);
-        Vector3 YangleVector = new Vector3(CameraToTarget.x, 0, CameraToTarget.z);
-
-        //XAngle = (float)(Math.Acos(Vector3.Dot(XangleVector, new Vector3(0, 1, 0 )) / (XangleVector.magnitude)) * (360 / (2 * Math.PI)));
-
-        
+        Vector3 YangleVector = new Vector3(CameraToTarget.x, 0, CameraToTarget.z);        
 
         YAngle = (float)(Math.Acos(CameraToTarget.x / (YangleVector.magnitude)) * (360 / (2 * Math.PI)));
         YAngle *= SignumFunction(CameraToTarget.z);
