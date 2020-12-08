@@ -1,3 +1,3 @@
 # UnityScrips
 
-This is collection of diffrent Unity Scrips
+This is collection of different Unity Scripts
